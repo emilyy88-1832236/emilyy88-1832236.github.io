@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h2>Job Application</h2>
+<h2>Safeway Casher Application</h2>
 
 <form action="http://gclass.alexburner.com/formtest.php" method="post">
 
@@ -115,18 +115,16 @@
 			<label>How many years have you been working:</label> 
 			<select name="years">
 				<option value="" selected="true">Choose one</option>
-				<option value="AL">less than 1 year</option>
-				<option value="AL">1-3 years</option>
-				<option value="AL">more than 3 years</option>
+				<option value="ess than 1 year">less than 1 year</option>
+				<option value="1-3 years">1-3 years</option>
+				<option value="more than 3 years">more than 3 years</option>
+			</select>
 		</div>	
-		
 		<div class="field">
-			<label>What type of position are you seeking? (check all that apply)</label>
+			<label>Did you work as a casher before? </label>
 			<ul>
-				<li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
-				<li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
-				<li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
-				<li><input type="checkbox" name="position_tp" value="temporary">Temporary</li>
+				<li><input type="checkbox" name="position_pt" value="parttime">Yes</li>
+				<li><input type="checkbox" name="position_ft" value="fulltime">No</li>
 			</ul>
 		</div>
 		<div class="field">
@@ -168,14 +166,16 @@
 
 	<fieldset>
 		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>Highest education?</label> 
+			<input type="radio" name="legal" value="High School">High School
+			<input type="radio" name="legal" value="College">College
+			<input type="radio" name="legal" value="Undergraduate or higher">Undergraduate or higher
+		</div>
 			
 		<div class="field">
 			<label>Why do you deserve this job?</label><br>
 			<textarea name="deserve" rows="6" cols="60"></textarea>
-		</div>
-		<div class="field">
-			<label>Describe a recent project:</label><br>
-			<textarea name="project" rows="6" cols="60"></textarea>
 		</div>
 	</fieldset>
 
